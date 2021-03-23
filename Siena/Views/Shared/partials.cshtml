@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-light navbar-expand-lg" style="background-color: #FB5E0A;">
+            
+                <div class="container-fluid d-flex">
+                    <a class="navbar-brand fs-4 ">Egresados SENA</a>
+                </div>
+                <div class="d-flex flex-row-reverse bd-highlight">
+                    <a class="dropdown-item">@Html.ActionLink("Buscar", "Search")</a>
+                    <a class="dropdown-item">@Html.ActionLink("Agregados", "Details")</a>
+                    <a class="dropdown-item">@Html.ActionLink("Agregar", "Create")</a>
+                    <a class="dropdown-item">@Html.ActionLink("Inicio", "Index")</a>
+                </div>
+        </nav>
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+    
+  
+</body>
+</html>
